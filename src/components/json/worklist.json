@@ -1,0 +1,17 @@
+{
+    "Work 1": {
+        "title": "Work 1",
+        "label": "Label 1",
+        "description": "Ini deskripsi 1"
+    },
+    "Work 2": {
+        "title": "Work 2",
+        "label": "Label 2",
+        "description": "Ini deskripsi 2"
+    },
+    "Work 3": {
+        "title": "Work 3",
+        "label": "Label 3",
+        "description": "Ini deskripsi 3"
+    }
+}

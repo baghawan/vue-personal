@@ -1,0 +1,12 @@
+#work-list {
+	background-color: #f9f9f9;
+
+	.works-row {
+		@extend .row;
+
+		.works-col {
+			@extend .col-md-6;
+			@extend .col-lg-4;
+		}
+	}
+}

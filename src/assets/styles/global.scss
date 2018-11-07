@@ -1,0 +1,232 @@
+@import "setup/normalize.scss";
+@import "setup/variables.scss";
+@import "setup/mixin.scss";
+@import "setup/reboot.scss";
+@import "setup/typography.scss";
+@import "setup/icon.scss";
+
+@import "base/buttons.scss";
+// @import "base/forms.scss";
+@import "base/grid.scss";
+// @import "base/images.scss";
+@import "base/input-group.scss";
+@import "base/responsive-embed.scss";
+@import "base/tables.scss";
+
+@import "utilities/align.scss";
+@import "utilities/clearfix.scss";
+@import "utilities/display.scss";
+@import "utilities/flex.scss";
+@import "utilities/float.scss";
+@import "utilities/position.scss";
+@import "utilities/sizing.scss";
+@import "utilities/spacing.scss";
+@import "utilities/text.scss";
+@import "utilities/visibility.scss";
+
+
+
+/* GLOBAL
+-------------------------------------------- */ 
+html {
+    position: relative;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body, input, textarea, select, button {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-font-feature-settings: "liga", "kern";
+}
+
+
+#header {
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	top: 0;
+	left: 0;
+
+	.header--inner {
+		padding: 1rem 30px;
+	}
+
+    .logo {
+    	display: block;
+    	width: 30px;
+    	height: 40px;
+
+    	.a {
+			opacity: 0;
+		}
+
+		.b {
+			opacity: 0;
+			transform: scale(3, 1);
+		}
+
+		.c {
+			transform: translate(36px, 38px) scale(0);
+		}
+
+		.d {
+			opacity: 0;
+			transform: translateX(-100%);
+		}
+
+    	&.show {
+    		.a {
+    			@include animation(a .75s cubic-bezier(.23,1,.32,1) .5s forwards);
+    		}
+
+    		.b {
+    			@include animation(b .75s cubic-bezier(.23,1,.32,1) .1s forwards);
+    		}
+
+    		.c {
+    			@include animation(c .75s cubic-bezier(.23,1,.32,1) 1.1s forwards);
+    		}
+
+    		.d {
+    			@include animation(d .75s cubic-bezier(.23,1,.32,1) 1.5s forwards);
+    		}
+    	}
+    }
+
+    .header-button {
+		position: relative;
+		width: 40px;
+		height: 40px;
+
+		#burger {
+			// position: fixed;
+			position: relative;
+			z-index: 2;
+		    width: 40px;
+		    height: 40px;
+		    cursor: pointer;
+		    outline: 0;
+		    background-color: transparent;
+		    padding: 0;
+
+		    &:before,
+		    &:after {
+		    	content: '';
+		    	position: absolute;
+		    	left: 10px;
+		    	width: 20px;
+		    	height: 2px;
+		    	background-color: $gray;
+		    	transition: all 250ms ease-out;
+		    }
+
+		    &:before {
+		    	top: 15px;
+		    }
+
+		    &:after {
+		    	bottom: 15px;
+		    }
+
+		    &.clicked {
+		    	&:before {
+		    		transform: translateY(3px) rotate(135deg);
+		    	}
+
+		    	&:after {
+		    		transform: translateY(-3px) rotate(45deg);
+		    	}
+		    }
+		}
+	}
+}
+
+
+
+
+
+/* RE-USABLE BASE
+-------------------------------------------- */ 
+.no-margin {
+    margin: 0;
+}
+
+.has-ver-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.has-ver-margin {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.w-fit {
+    width: 100%;
+    display: block;
+}
+
+.fheight {
+	height: 100%;
+}
+
+
+
+/* KEYFRAMES
+-------------------------------------------- */ 
+@include keyframes(a) {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        transform: rotate(20deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(0);
+    }
+}
+
+@include keyframes(b) {
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@include keyframes(c) {
+    to {
+    	transform: translate(36px, 38px) scale(1);
+        
+    }
+}
+
+@include keyframes(d) {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

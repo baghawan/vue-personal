@@ -1,18 +1,29 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div>
+    	<HomeIntro />
+    	<HomeWorks />
+    </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import HomeIntro from '@/components/HomeIntro.vue'
+import HomeWorks from '@/components/HomeWorks.vue'
+import firstLoad from '@/helpers/firstload.js'
 
 export default {
-  name: 'home',
-  components: {
-    HelloWorld
-  }
+    name: 'home',
+    components: {
+        HomeIntro,
+        HomeWorks
+    },
+    methods: {
+        firstLoad: firstLoad
+    },
+    mounted: function () {
+        this.$nextTick(() => {
+        this.firstLoad()
+        })
+    }
 }
 </script>
