@@ -73,21 +73,8 @@
 }
 
 .link {
-    color: $brand-primary;
+    color: $link-color;
     font-family: inherit;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    border-bottom: 1px solid transparent;
-
-    &:hover,
-    &:focus,
-    &.active {
-        border-color: $brand-primary;
-    }
-
-    &.underlined {
-        border-color: $brand-primary;
-    }
 }
 
 .link.link-opaque {

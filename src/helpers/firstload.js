@@ -5,22 +5,26 @@ var firstLoad = () => {
     const svg = document.getElementById('logo')
 
     var introText = $('#intro-text')
-    var dataText = introText.data('text').split('^')
+    var dataText = introText.data('text').split('<br/>')
 
-    new TypeIt(introText, {
-        strings: dataText,
-        speed: 50,
-        autoStart: false,
-        breakLines: true,
-        cursor: false,
-        afterComplete: function () {
-            $('body').addClass('intro-finish')
+    if(introText.length){
+        new TypeIt(introText, {
+            strings: dataText,
+            speed: 50,
+            autoStart: false,
+            breakLines: true,
+            cursor: false,
+            afterComplete: function (instance) {
+                $('body').addClass('first-intro-finish')
 
-            setTimeout(() => {
-                svg.setAttribute('class', 'logo show')
-            }, 1000)
-        }
-    })
+                setTimeout(() => {
+                    svg.setAttribute('class', 'logo show')
+                }, 1000)
+            }
+        })
+    }
+
+    
 
     // fullHeight()
 

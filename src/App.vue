@@ -26,19 +26,33 @@
                 </div>
                 <div class="header-button">
                     <button type="button" id="burger" class="btn"></button>
+                    <nav id="menu">
+                        <router-link to="/works">Works</router-link>
+                        <router-link to="/about">About</router-link>
+                    </nav>
                 </div>
             </div>
         </header>
         <main>
-            <router-view />
+            <transition name="component-fade" mode="out-in">
+                <router-view />
+            </transition>
         </main>
-        <!-- <footer id="footer">
+        <footer id="footer">
             <div class="footer--inner flexed halign-justify">
-                <p class="no-margin small">v3.0.0</p>
+                <p class="no-margin">© 2018 — Dian Baghawan Putera</p>
+                <p class="no-margin">v3.0.0</p>
+                
             </div>
-        </footer> -->
+        </footer>
     </div>
 </template>
 
 <style lang="scss">
+.component-fade-enter-active, .component-fade-leave-active {
+  transition: opacity .5s ease;
+}
+.component-fade-enter, .component-fade-leave-to {
+  opacity: 0;
+}
 </style>

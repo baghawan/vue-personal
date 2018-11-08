@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+
 import Helper from '@/helpers/Helper.js'
 
 Vue.config.productionTip = false
@@ -12,6 +13,12 @@ new Vue({
     store,
     methods: {
         Helper
+    },
+    watch: {
+        '$route' (to, from) {
+            document.body.classList.remove('menu-show')
+            document.getElementById('burger').classList.remove('clicked')
+        }
     },
     mounted: function () {
         this.Helper()

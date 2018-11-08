@@ -1,16 +1,11 @@
 <template>
-    <div class="about-content__wrapper">
-        <AboutIntro />
+    <div class="works">
+        <h1>This is a work page</h1>
     </div>
 </template>
 
 <script>
-import AboutIntro from '@/components/AboutIntro.vue'
-
 export default {
-	components: {
-        AboutIntro
-    },
 	beforeCreate: function() {
         document.getElementById('logo').setAttribute('class', 'logo show')
     }

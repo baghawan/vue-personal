@@ -44,6 +44,17 @@ body, input, textarea, select, button {
 	-moz-font-feature-settings: "liga", "kern";
 }
 
+#header,
+#footer {
+	> [class*="--inner"] {
+		padding: 1rem 30px;
+
+		@media (max-width: $bp-md - 1px) {
+			padding: 1rem;
+		}
+	}
+}
+
 
 #header {
 	position: fixed;
@@ -51,10 +62,6 @@ body, input, textarea, select, button {
 	width: 100%;
 	top: 0;
 	left: 0;
-
-	.header--inner {
-		padding: 1rem 30px;
-	}
 
     .logo {
     	display: block;
@@ -141,9 +148,40 @@ body, input, textarea, select, button {
 		    	&:after {
 		    		transform: translateY(-3px) rotate(45deg);
 		    	}
+
+		    	~ nav#menu {
+		    		transform: translateX(-100%);
+		    		opacity: 1;
+		    		pointer-events: auto;
+		    	}
 		    }
 		}
+
+		nav#menu {
+			position: absolute;
+			top: 7px;
+			left: 0;
+			pointer-events: none;
+			transform: translateX(-70%);
+			opacity: 0;
+			transition: all .35s ease-in-out;
+
+			a {
+				margin: 0 10px;
+			}
+		}
 	}
+}
+
+
+#footer {
+	p {
+		font-size: 14px;
+	}
+}
+
+main {
+	min-height: 100vh;
 }
 
 
@@ -157,8 +195,8 @@ body, input, textarea, select, button {
 }
 
 .has-ver-padding {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .has-ver-margin {

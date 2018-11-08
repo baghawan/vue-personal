@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="home-content__wrapper">
     	<HomeIntro />
     	<HomeWorks />
     </div>
@@ -9,7 +9,9 @@
 // @ is an alias to /src
 import HomeIntro from '@/components/HomeIntro.vue'
 import HomeWorks from '@/components/HomeWorks.vue'
+
 import firstLoad from '@/helpers/firstload.js'
+
 
 export default {
     name: 'home',
@@ -21,7 +23,7 @@ export default {
         firstLoad: firstLoad
     },
     mounted: function () {
-        this.$nextTick(() => {
+        this.$once("hook:mounted", () => {
         this.firstLoad()
         })
     }
