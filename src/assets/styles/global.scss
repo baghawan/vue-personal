@@ -44,13 +44,23 @@ body, input, textarea, select, button {
 	-moz-font-feature-settings: "liga", "kern";
 }
 
+main {
+	min-height: 100vh;
+}
+
 #header,
 #footer {
+	pointer-events: none;
+
 	> [class*="--inner"] {
-		padding: 1rem 30px;
+		padding: 1rem 20px;
 
 		@media (max-width: $bp-md - 1px) {
 			padding: 1rem;
+		}
+
+		> * {
+			pointer-events: auto;
 		}
 	}
 }
@@ -175,14 +185,18 @@ body, input, textarea, select, button {
 
 
 #footer {
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+
 	p {
 		font-size: 14px;
 	}
 }
 
-main {
-	min-height: 100vh;
-}
+
 
 
 

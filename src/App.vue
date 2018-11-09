@@ -40,7 +40,7 @@
         </main>
         <footer id="footer">
             <div class="footer--inner flexed halign-justify">
-                <p class="no-margin">© 2018 — Dian Baghawan Putera</p>
+                <p class="no-margin">© 2018 — Baghawan</p>
                 <p class="no-margin">v3.0.0</p>
                 
             </div>

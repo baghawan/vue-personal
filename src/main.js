@@ -16,6 +16,11 @@ new Vue({
     },
     watch: {
         '$route' (to, from) {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            });
             document.body.classList.remove('menu-show')
             document.getElementById('burger').classList.remove('clicked')
         }
