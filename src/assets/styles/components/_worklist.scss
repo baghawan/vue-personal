@@ -7,6 +7,8 @@
 		.works-col {
 			@extend .col-md-6;
 			@extend .col-lg-4;
+			padding-top: 10px;
+			padding-bottom: 10px;
 
 			.work-item {
 				.work-image {

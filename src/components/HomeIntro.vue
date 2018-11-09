@@ -1,14 +1,14 @@
 <template>
     <section id="home-intro" class="fh-js flexed halign-center">
         <div class="container intro--inner">
-            <!-- <p id="intro-text" class="type-it" data-text="Hi, i'm Dian Baghawan Putera.^I draw (for fun), design and code (for a living).">
+            <p id="intro-text" class="type-it" data-text="Hi, i'm Dian Baghawan Putera.^I draw (for fun), design and code (for a living).">
             	Hi, i'm Dian Baghawan Putera.
             	I draw (for fun), design and code (for a living).
-            </p> -->
-            <p id="intro-text" class="type-it" data-text="Lorem ipsum dolor sit amet,^ adipisicing elit, sed do eiusmod.">
+            </p>
+            <!-- <p id="intro-text" class="type-it" data-text="Lorem ipsum dolor sit amet,^ adipisicing elit, sed do eiusmod.">
             	Lorem ipsum dolor sit amet,
             	adipisicing elit, sed do eiusmod.
-            </p>
+            </p> -->
         </div>
     </section>
 </template>

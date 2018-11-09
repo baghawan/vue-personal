@@ -3,7 +3,6 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
-
 import Helper from '@/helpers/Helper.js'
 
 Vue.config.productionTip = false
@@ -20,7 +19,7 @@ new Vue({
                 top: 0,
                 left: 0,
                 behavior: 'smooth'
-            });
+            })
             document.body.classList.remove('menu-show')
             document.getElementById('burger').classList.remove('clicked')
         }

@@ -1,10 +1,14 @@
 <template>
     <section id="work-list" class="has-ver-padding">
-        <div class="section--inner">
+        <div class="section--inner has-ver-padding">
         	<div class="container">
-                <SectionHeader title="Latest Works" />
+                <SectionHeader title="Directory" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
         		<div class="works-row">
-        			<div class="works-col" v-for="workList in WorksToDisplay">
+        			<div class="works-col" v-for="workList in workLists">
         				<div class="work-item">
 	        				<figure class="work-image no-margin" data-ratio="square">
 						        <a href="#">
@@ -19,7 +23,6 @@
                                     </figcaption>
 						        </a href="#">
 						    </figure>
-	        				
 	        			</div>
         			</div>
         		</div>
@@ -33,7 +36,7 @@ import workLists from './json/worklist.json'
 import SectionHeader from "@/components/SectionHeader.vue";
 
 export default {
-    name: 'HomeWorks',
+    name: 'WorksDirectory',
     components: {
         SectionHeader
     },
@@ -41,42 +44,6 @@ export default {
     	return {
     		workLists: workLists
     	}
-    },
-    computed: {
-        WorksToDisplay: function() {
-            // ref: https://stackoverflow.com/questions/39483677/how-to-get-first-n-elements-of-an-object-using-lodash
-            function firstN(obj, n) {
-                //get the keys out
-                return Object.keys(obj)
-
-                    //this will ensure consistent ordering of what you will get back
-                    // .sort()
-
-                    //get the first N
-                    // .slice(0, n)
-
-                    //get the last N
-                    .slice(-n)
-
-                    //generate a new object out of them
-                    .reduce(function(memo, current) {
-                        memo[current] = obj[current]
-                        return memo;
-                    }, {})
-            }
-
-            var obj = this.workLists
-            // console.log(firstN(obj, 3))
-
-            return firstN(obj, 6)
-        }
-    },
-    mounted(){
-        // reverse the order on mounted
-        var list = $('#work-list .works-row');
-        var listItems = list.children('.works-col');
-
-        list.append(listItems.get().reverse());
     }
 }
 </script>
@@ -84,4 +51,8 @@ export default {
 <style scoped lang="scss">
 @import "../assets/styles/base/images.scss";
 @import "../assets/styles/components/worklist.scss";
+
+.works-row {
+    margin-top: 3rem;
+}
 </style>
