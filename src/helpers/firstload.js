@@ -10,7 +10,7 @@ var firstLoad = () => {
     if(introText.length){
         new TypeIt(introText, {
             strings: dataText,
-            speed: 50,
+            speed: 20,
             autoStart: false,
             breakLines: true,
             cursor: false,

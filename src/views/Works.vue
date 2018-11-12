@@ -11,7 +11,7 @@ export default {
 	components: {
         WorksDirectory
     },
-	beforeCreate: function() {
+	mounted: function() {
         document.getElementById('logo').setAttribute('class', 'logo show')
     }
 }

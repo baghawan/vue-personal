@@ -204,6 +204,13 @@ main {
 
 /* RE-USABLE BASE
 -------------------------------------------- */ 
+.container {
+	@media (max-width: $bp-md - 1px) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
 .no-margin {
     margin: 0;
 }

@@ -1,62 +1,11 @@
 {
     "Work 1": {
+        "id": 0,
         "title": "Work Title 1",
         "label": ["Mural", "Drawing"],
-        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    "Work 2": {
-        "title": "Work Title 2",
-        "label": ["Branding Identiy", "Drawing"],
-        "excerpt": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-    },
-    "Work 3": {
-        "title": "Work Title 3",
-        "label": ["Front-end", "Drawing"],
-        "excerpt": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    "Work 4": {
-        "title": "Work Title 4",
-        "label": ["Front-end", "Drawing"],
-        "excerpt": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    "Work 5": {
-        "title": "Work Title 5",
-        "label": ["Mural", "Drawing"],
-        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    "Work 6": {
-        "title": "Work Title 6",
-        "label": ["Front-end"],
-        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    "Work 7": {
-        "title": "Work Title 7",
-        "label": ["Front-end"],
-        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    "Work 8": {
-        "title": "Work Title 8",
-        "label": ["Front-end"],
-        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    "Work 9": {
-        "title": "Work Title 9",
-        "label": ["Front-end"],
-        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    "Work 10": {
-        "title": "Work Title 10",
-        "label": ["Front-end"],
-        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    "Work 11": {
-        "title": "Work Title 11",
-        "label": ["Front-end"],
-        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    "Work 12": {
-        "title": "Work Title 12",
-        "label": ["Front-end"],
-        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "excerpt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "year": "2017",
+        "link": "https://google.com",
+        "clientDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     }
 }

@@ -4,24 +4,7 @@
         	<div class="container">
                 <SectionHeader title="Latest Works" />
         		<div class="works-row">
-        			<div class="works-col" v-for="workList in WorksToDisplay">
-        				<div class="work-item">
-	        				<figure class="work-image no-margin" data-ratio="square">
-						        <a href="#">
-						            <img srcset="@/assets/img/dummy-key-1.jpg 1x, @/assets/img/dummy-key-1@2x.jpg 2x"
-						                 src="@/assets/img/dummy-key-1.jpg" alt="Key 1" />
-
-                                    <span class="overlay-grd"></span>
-
-                                    <figcaption class="work-info">
-                                        <h6 class="work-title">{{ workList.title }}</h6>
-                                        <p class="work-label no-margin"><span v-for="label in workList.label">{{ label }}</span></p>
-                                    </figcaption>
-						        </a href="#">
-						    </figure>
-	        				
-	        			</div>
-        			</div>
+                    <WorkListShared v-for="workList in WorksToDisplay" :key="workList.key" :workList="workList" />
         		</div>
         	</div>
         </div>
@@ -31,11 +14,13 @@
 <script>
 import workLists from './json/worklist.json'
 import SectionHeader from "@/components/SectionHeader.vue";
+import WorkListShared from "@/components/shared/WorkListShared.vue";
 
 export default {
     name: 'HomeWorks',
     components: {
-        SectionHeader
+        SectionHeader,
+        WorkListShared
     },
     data() {
     	return {
@@ -68,7 +53,7 @@ export default {
             var obj = this.workLists
             // console.log(firstN(obj, 3))
 
-            return firstN(obj, 6)
+            return firstN(obj, 1)
         }
     },
     mounted(){
@@ -82,6 +67,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../assets/styles/base/images.scss";
-@import "../assets/styles/components/worklist.scss";
+#work-list {
+    background-color: #f9f9f9;
+
+    .works-row {
+        @extend .row;
+    }
+}
 </style>
