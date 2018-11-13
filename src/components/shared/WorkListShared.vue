@@ -3,8 +3,7 @@
 		<div class="work-item">
 			<figure class="work-image no-margin" data-ratio="square">
 		        <a @click="goToDetail(workList.slug)">
-		            <img srcset="@/assets/img/dummy-key-1.jpg 1x, @/assets/img/dummy-key-1@2x.jpg 2x"
-		                 src="@/assets/img/dummy-key-1.jpg" alt="Key 1" />
+		            <img :src="workList.thumb" alt="Key 1" />
 
 		            <span class="overlay-grd"></span>
 

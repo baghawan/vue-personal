@@ -3,10 +3,11 @@
         <div class="section--inner has-ver-padding">
         	<div class="container">
                 <SectionHeader title="Directory" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.</p>
+                <!-- <p class="small">
+                    The information, images, and/or data contained in this page are copyrighted<br/>
+                    by their respective owner and may not be distributed, modified, reproduced<br/>
+                    in whole or in part without permission of the respective owner.
+                </p> -->
                 
         		<div class="works-row">
                     <WorkListShared v-for="workList in workLists" :key="workList.key" :workList="workList" />

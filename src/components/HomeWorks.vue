@@ -53,7 +53,7 @@ export default {
             var obj = this.workLists
             // console.log(firstN(obj, 3))
 
-            return firstN(obj, 1)
+            return firstN(obj, 3)
         }
     },
     mounted(){

@@ -11,8 +11,8 @@
             </div>
             <div class="section--inner has-ver-padding">
                 <div class="container">
-                    <SectionHeader title="Brand Experiences" />
-                    <p>I've been fortunate enough to produce work for these brands.</p>
+                    <SectionHeader title="Selected Clients" />
+                    <p>I've been fortunate enough to produce work for these clients.</p>
 
                     <ul class="brand-name">
                         <li v-for="Brand in Brands.Brands">{{ Brand }}</li>

@@ -51,7 +51,8 @@
 	background-color: $gray-lightest;
 
 	.container {
-		img {
+		img,
+		video {
 			display: block;
 			width: auto;
 			height: auto;
