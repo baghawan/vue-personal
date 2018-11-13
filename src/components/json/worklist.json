@@ -7,9 +7,9 @@
         "year": "2015",
         "link": "https://www.placeonary.com/o/tubagus-laundry/5a0036R4ea8419e33ce383992/",
         "images": [
-            "tubagus-0.png",
-            "tubagus-1.png",
-            "tubagus-2.png"
+            "https://baghawan.github.io/vue-personal/static/tubagus-0.png",
+            "https://baghawan.github.io/vue-personal/static/tubagus-1.png",
+            "https://baghawan.github.io/vue-personal/static/tubagus-2.png"
         ],
         "clientDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     }
