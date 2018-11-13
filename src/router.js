@@ -38,8 +38,7 @@ const router = new Router({
             name: 'work-detail',
             component: WorkDetails,
             meta: {
-                title: 'Baghawan | Work Detail'
-                // title: `Baghawan | ${Wid}`
+                title: 'Baghawan | Works'
             }
         }
     ]

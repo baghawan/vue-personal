@@ -45,11 +45,10 @@
 }
 
 .work-details--content {
-	margin-top: 8rem;
-
-	@media (max-width: $bp-md - 1px) {
-		margin-top: 4rem
-	}
+	margin-top: 4rem;
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+	background-color: $gray-lightest;
 
 	.container {
 		img {

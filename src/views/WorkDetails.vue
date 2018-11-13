@@ -1,6 +1,6 @@
 <template>
     <div class="workDetail-content__wrapper">
-        <section id="work-details" class="has-ver-padding" v-for="workList in workLists" :key="workList.key" v-if="wId == workList.title">
+        <section id="work-details" class="has-ver-padding" v-for="workList in workLists" :key="workList.key" v-if="wId == workList.slug">
 	        <div class="section--inner has-ver-padding">
 	        	<div class="work-details--intro">
 	        		<div class="container">
@@ -26,9 +26,7 @@
 	        	<div class="work-details--content">
 	        		<div class="container">
 	        			<figure class="text-center">
-	        				<img src="@/assets/img/article-media-1.jpg" />
-	        				<img src="@/assets/img/giphy.gif" />
-	        				<img src="@/assets/img/article-media-1.jpg" />
+	        				<img v-for="images in workList.images" :src="'/img/'+images">
 	        			</figure>
 	        			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	        		</div>

@@ -2,9 +2,6 @@
     <div id="app">
         <header id="header">
             <div class="header--inner flexed halign-justify">
-                <!-- <div>
-                    <p class="no-margin small">v3.0.0</p>
-                </div> -->
                 <div class="logo-holder">
                     <router-link to="/">
                         <svg xmlns="http://www.w3.org/2000/svg" id="logo" class="logo" viewBox="0 0 52.972 100">
