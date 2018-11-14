@@ -9,41 +9,25 @@
 // @import "base/forms.scss";
 @import "base/grid.scss";
 // @import "base/images.scss";
-@import "base/input-group.scss";
-@import "base/responsive-embed.scss";
-@import "base/tables.scss";
+// @import "base/input-group.scss";
+// @import "base/responsive-embed.scss";
+// @import "base/tables.scss";
 
-@import "utilities/align.scss";
-@import "utilities/clearfix.scss";
-@import "utilities/display.scss";
-@import "utilities/flex.scss";
-@import "utilities/float.scss";
-@import "utilities/position.scss";
-@import "utilities/sizing.scss";
-@import "utilities/spacing.scss";
-@import "utilities/text.scss";
-@import "utilities/visibility.scss";
+// @import "utilities/align.scss";
+// @import "utilities/clearfix.scss";
+// @import "utilities/display.scss";
+// @import "utilities/flex.scss";
+// @import "utilities/float.scss";
+// @import "utilities/position.scss";
+// @import "utilities/sizing.scss";
+// @import "utilities/spacing.scss";
+// @import "utilities/text.scss";
+// @import "utilities/visibility.scss";
 
 
 
 /* GLOBAL
 -------------------------------------------- */ 
-html {
-    position: relative;
-    overflow-x: hidden;
-}
-
-body {
-    overflow-x: hidden;
-}
-
-body, input, textarea, select, button {
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-moz-font-feature-settings: "liga", "kern";
-}
-
 main {
 	min-height: 100vh;
 }
@@ -195,14 +179,6 @@ main {
 		font-size: 14px;
 	}
 }
-
-iframe#ifrm {
-	position: absolute;
-}
-
-
-
-
 
 
 

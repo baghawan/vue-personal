@@ -21,6 +21,8 @@
 
 html {
   box-sizing: border-box;
+  position: relative;
+  overflow-x: hidden;
 }
 
 *,
@@ -81,6 +83,12 @@ body {
   color: $body-color;
   // By default, `<body>` has no `background-color` so we set one as a best practice.
   background-color: $body-bg;
+
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga", "kern";
 }
 
 // Suppress the focus outline on elements that cannot be accessed via keyboard.

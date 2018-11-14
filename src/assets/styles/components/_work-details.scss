@@ -67,6 +67,7 @@
 			max-width: 500px;
 			margin-left: auto;
 			margin-right: auto;
+			white-space: pre-line;
 			letter-spacing: .5px;
 
 			@media (min-width: $bp-md) {
