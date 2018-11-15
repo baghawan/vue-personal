@@ -87,7 +87,7 @@
         "id": 5,
         "title": "Asian Games 2018 by RDM",
         "slug": "asian-games-2018-by-RDM",
-        "label": ["Frontend"],
+        "label": ["Frontend", "SVG Animations"],
         "year": "2018",
         "link": "http://asiangames2018.onerdm.com/",
         "thumb": "https://baghawan.github.io/vue-personal/static/ag-onerdm/thumb-agonerdm.jpg",
