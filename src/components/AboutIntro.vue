@@ -19,9 +19,9 @@
 
             <p class="social-links no-margin">
                 <span>Connect</span>
-                <a href="#" class="link"><i class="icon-mail"></i></a>
-                <a href="#" class="link"><i class="icon-github-circled"></i></a>
-                <a href="#" class="link"><i class="icon-instagram"></i></a>
+                <a href="mailto:dianbaghawanputera@gmail.com?Subject=Hello" target="_blank" class="link"><i class="icon-mail"></i></a>
+                <a href="https://github.com/baghawan" target="_blank" class="link"><i class="icon-github-circled"></i></a>
+                <a href="https://instagram.com/baghawan" target="_blank" class="link"><i class="icon-instagram"></i></a>
             </p>
         </div>
     </section>

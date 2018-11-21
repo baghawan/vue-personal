@@ -38,7 +38,7 @@
         <footer id="footer">
             <div class="footer--inner flexed halign-justify">
                 <p class="no-margin">© 2018 — Baghawan</p>
-                <p class="no-margin">v3.0.1</p>
+                <p class="no-margin">v3.0.2</p>
                 
             </div>
         </footer>

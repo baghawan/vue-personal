@@ -32,6 +32,13 @@ export default {
         return {
             workLists
         }
+    },
+    mounted(){
+        // reverse the order on mounted
+        var list = $('#work-list .works-row');
+        var listItems = list.children('.works-col');
+
+        list.append(listItems.get().reverse());
     }
 }
 </script>
