@@ -11,9 +11,9 @@
             </p> -->
 
             <p class="about-text-content">
-                I'm an Indonesian based Designer and Frontend Developer. Living and working in South Tangerang.
+                I'm an Indonesian based Designer and Frontend Developer. Living and working in Bandung.
                 Specialized and focused in Web Design, UX/UI, and Identity.
-                Currently i spend my weekdays at <a href="https://mineral.co.id/" target="_blank" class="link">Mineral Studio</a> working and learning as a Frontend Developer,
+                Currently i spend my weekdays at <a href="https://www.mirumagency.com/en/country/indonesia" target="_blank" class="link">Mirum</a> working and learning as a Frontend Developer,
                 and sometimes spend my weekends roaming the streets to paint.
             </p>
 

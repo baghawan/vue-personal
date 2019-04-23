@@ -3,8 +3,8 @@
             <div class="section--inner">
                 <div class="container">
                     <p>
-                        Currently working at <a href="https://mineral.co.id/" target="_blank" class="link">Mineral Studio</a> as a Frontend Developer,
-                        and had the opportunity to do projects for some of the most respected brands around.
+                        Currently working at <a href="https://www.mirumagency.com/en/country/indonesia" target="_blank" class="link">Mirum</a> as a Frontend Developer.
+                        I've had the opportunity to do projects for some of the most respected brands around.
                         I am happiest working on meaningful projects with creative and passionate people.
                     </p>
                 </div>
