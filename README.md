@@ -1,4 +1,4 @@
-# vue-personal
+# Baghawan Personal Site
 
 ## Project setup
 ```
