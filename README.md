@@ -1,15 +1,20 @@
-# Dian Baghawan Putera
+# baghawan
 
-## Frontend Engineer | Graphic Designer
+## Build Setup
 
-Sedang dalam perbaikan.
+```bash
+# install dependencies
+$ npm install
 
-**Latest Projects (Website)**
-- [Sinar Surya Motor](https://sinarsuryamotor.com/)
-- [Notorious Espresso](https://notoriousespresso.com.au/)
-- [Spacemonkeys](https://spacemonkeys.co.id/)
-- [Satriadewa](https://satriadewa.com)
-- [OneRDM](https://onerdm.com/)
-- [Pacific Place](https://pacificplace.co.id/)
-- [Chic and Darling](https://chicanddarling.com/)
-- [Studio 1212](https://studio-1212.com/)
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm run start
+
+# generate static project
+$ npm run generate
+```
+
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
