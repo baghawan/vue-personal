@@ -1,10 +1,13 @@
-let development = process.env.NODE_ENV !== 'production'
+let dev = process.env.NODE_ENV !== 'production'
 
 export default {
     mode: "universal",
     target: 'static',
     router: {
-        base:  development ? '/' : '/baghawan.github.io/'
+        base:  dev ? '/' : '/baghawan.github.io/'
+    },
+    env: {
+        baseUrl: process.env.BASE_URL || 'http://localhost:3000'
     },
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
