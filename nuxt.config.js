@@ -4,10 +4,10 @@ export default {
     mode: "universal",
     target: 'static',
     router: {
-        base:  dev ? '/' : '/baghawan.github.io/'
+        base: dev ? '/' : '/baghawan.github.io/'
     },
     env: {
-        baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+        baseUrl: dev ? 'http://localhost:3000' : process.env.BASE_URL
     },
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
