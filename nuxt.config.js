@@ -6,7 +6,7 @@ export default {
     },
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
-        title: 'baghawan',
+        titleTemplate: 'BAGHAWAN | %s',
         htmlAttrs: {
             lang: 'en'
         },
@@ -25,6 +25,7 @@ export default {
             { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
             { rel: 'manifest', href: '/site.webmanifest' },
             { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5bbad5' },
+            { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'crossorigin' },
             { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Barlow:400,600&display=swap' }
         ]
     },
