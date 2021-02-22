@@ -7,7 +7,7 @@ export default {
         base: dev ? '/' : '/baghawan.github.io/'
     },
     env: {
-        baseUrl: dev ? 'http://localhost:3000' : process.env.BASE_URL
+        baseUrl: dev ? 'http://localhost:3000' : 'https://baghawan.github.io'
     },
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
@@ -30,7 +30,9 @@ export default {
             { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
             { rel: 'manifest', href: '/site.webmanifest' },
             { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5bbad5' },
-            { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'crossorigin' },
+            { rel: 'dns-prefetch', href: 'https://fonts.gstatic.com/' },
+            { rel: 'preconnect', href: 'https://fonts.gstatic.com/', crossorigin: 'crossorigin' },
+            { rel: 'preload', as: 'style', href: 'https://fonts.googleapis.com/css?family=Barlow:400,600', crossorigin: 'crossorigin' },
             { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Barlow:400,600&display=swap' }
         ]
     },

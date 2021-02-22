@@ -22,16 +22,10 @@ export default {
             meta: [
                 { hid: 'description', name: 'description', content: 'Description for Homepage' },
 
-                // opengraph meta
-                { name: 'og:type', content: 'website' },
-                { name: 'og:url', content: process.env.baseUrl + this.$route.path },
                 { name: 'og:title', content: `Baghawan | ${this.headTitle}` },
                 { name: 'og:description', content: 'Description for Homepage' },
                 { name: 'og:image', content: '' },
 
-                // twitter meta
-                { name: 'twitter:card', content: 'summary' },
-                { name: 'twitter:site', content: process.env.baseUrl + this.$route.path },
                 { name: 'twitter:title', content: `Baghawan | ${this.headTitle}` },
                 { name: 'twitter:description', content: 'Description for Homepage' },
                 { name: 'twitter:image', content: '' }
