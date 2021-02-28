@@ -2,7 +2,8 @@
     <div class="container">
         <div>
             <Logo />
-            <h1 class="title">
+            <Slider />
+            <h1 class="title sr-only">
                 baghawan
             </h1>
         </div>

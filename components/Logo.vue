@@ -1,29 +1,25 @@
 <template>
-  <svg class="NuxtLogo" width="245" height="180" viewBox="0 0 452 342" xmlns="http://www.w3.org/2000/svg">
-    <path
-      d="M139 330l-1-2c-2-4-2-8-1-13H29L189 31l67 121 22-16-67-121c-1-2-9-14-22-14-6 0-15 2-22 15L5 303c-1 3-8 16-2 27 4 6 10 12 24 12h136c-14 0-21-6-24-12z"
-      fill="#00C58E"
-    />
-    <path
-      d="M447 304L317 70c-2-2-9-15-22-15-6 0-15 3-22 15l-17 28v54l39-67 129 230h-49a23 23 0 0 1-2 14l-1 1c-6 11-21 12-23 12h76c3 0 17-1 24-12 3-5 5-14-2-26z"
-      fill="#108775"
-    />
-    <path
-      d="M376 330v-1l1-2c1-4 2-8 1-12l-4-12-102-178-15-27h-1l-15 27-102 178-4 12a24 24 0 0 0 2 15c4 6 10 12 24 12h190c3 0 18-1 25-12zM256 152l93 163H163l93-163z"
-      fill="#2F495E"
-    />
-  </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" id="logo" class="logo" viewBox="0 0 52.972 100">
+        <title>Baghawan</title>
+        <desc>Baghawan Logo</desc>
+        <g>
+            <path class="a" fill="#F5DF4D" d="M34.946,24.776c-2.815,0-5.493-1.648-6.678-4.396c-1.558-3.613-6.958-5.835-10.144-5.835H0V0h18.124c8.338,0,19.405,5.125,23.499,14.622c1.591,3.688-0.114,7.965-3.801,9.558C36.887,24.584,35.91,24.776,34.946,24.776z"/>
+
+            <path class="b" fill="#939597" d="M15.227,93.636c0,3.516-2.849,6.364-6.364,6.364H0V25.454h8.862c3.516,0,6.364,2.851,6.364,6.364V93.636z"/>
+
+            <g transform="translate(0, 0)">
+                <circle cx="0" cy="0" r="7.5" fill="#939597" transform="translate(36 38)" class="c" />
+            </g>
+
+            <path class="d" fill="#F5DF4D" d="M52.972,76.059C52.972,89.282,42.25,100,29.034,100V52.12C42.25,52.12,52.972,62.842,52.972,76.059z"/>
+        </g>
+    </svg>
 </template>
 
-<style>
-.NuxtLogo {
-  animation: 1s appear;
-  margin: auto;
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
+<style lang="scss" scoped>
+.logo {
+    display: block;
+    width: 30px;
+    height: 40px;
 }
 </style>

@@ -1,0 +1,10 @@
+@layer base {
+	html, body {
+		@apply overflow-x-hidden;
+	}
+
+	body {
+		@apply antialiased;
+		@apply font-normal;
+	}
+}
