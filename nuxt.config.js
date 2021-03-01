@@ -31,15 +31,15 @@ export default {
             { rel: 'manifest', href: '/site.webmanifest' },
             { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5bbad5' },
             { rel: 'dns-prefetch', href: 'https://fonts.gstatic.com/' },
-            { rel: 'preconnect', href: 'https://fonts.gstatic.com/', crossorigin: 'crossorigin' },
-            { rel: 'preload', as: 'style', href: 'https://fonts.googleapis.com/css?family=Barlow:400,600', crossorigin: 'crossorigin' },
+            { rel: 'preconnect', href: 'https://fonts.gstatic.com/', crossorigin: 'anonymous' },
+            { rel: 'stylesheet preload prefetch', as: 'style', href: 'https://fonts.googleapis.com/css?family=Barlow:400,600', crossorigin: 'anonymous' },
             { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Barlow:400,600&display=swap' }
         ]
     },
     
     // Global CSS: https://go.nuxtjs.dev/config-css
     css: [
-        // '@/assets/scss/global.scss'
+        '@/assets/scss/global.scss'
     ],
     
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

@@ -1,13 +1,11 @@
 <template>
-    <div class="container">
-        <div>
-            <Logo />
-            <Slider />
-            <h1 class="title sr-only">
-                baghawan
-            </h1>
-        </div>
-    </div>
+    <main>
+        <Header />
+        <!-- <Slider /> -->
+        <h1 class="title sr-only">
+            baghawan
+        </h1>
+    </main>
 </template>
 
 <script>

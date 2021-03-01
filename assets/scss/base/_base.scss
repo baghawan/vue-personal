@@ -3,8 +3,23 @@
 		@apply overflow-x-hidden;
 	}
 
+	html {
+		@apply min-h-screen;
+	}
+
 	body {
 		@apply antialiased;
 		@apply font-normal;
+		@apply h-screen;
+		@apply transition-all;
+		@apply duration-300;
+		@apply text-gray-700;
+	}
+
+	.dark-mode {
+		body {
+			@apply bg-gray-900;
+			@apply text-white;
+		}
 	}
 }
