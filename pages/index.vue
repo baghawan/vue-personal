@@ -98,7 +98,7 @@ export default {
 }
 
 .swiper-pagination {
-    bottom: 2rem;
+    bottom: 2rem !important;
 
     /deep/ .swiper-pagination-bullet {
         background-color: #939597;
