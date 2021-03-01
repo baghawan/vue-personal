@@ -5,6 +5,7 @@ module.exports = {
         // compatible with @nuxtjs/color-mode
         darkSelector: ".dark-mode",
         screens: {
+            'xs': '375px',
             'sm': '640px',
             'md': '768px',
             'lg': '1024px',
@@ -18,7 +19,7 @@ module.exports = {
 
         fontWeight: {
             normal: 400,
-            bold: 600,
+            bold: 500,
         },
 
         container: {

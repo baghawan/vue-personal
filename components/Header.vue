@@ -1,5 +1,5 @@
 <template>
-    <header id="main-header" class="absolute w-full">
+    <header id="main-header" class="fixed w-full z-10">
         <div class="container">
             <div class="grid grid-cols-2 gap-2">
                 <div>
@@ -27,7 +27,7 @@
                     <nav>
                         <ul class="inline-flex space-x-5">
                             <li>
-                                <NuxtLink to="/" class="font-bold">
+                                <NuxtLink to="/about" class="font-bold">
                                     About
                                 </NuxtLink>
                             </li>
@@ -70,9 +70,24 @@ export default {
     }
 }
 
+.nuxt-link-exact-active:not(.home-cta) {
+    pointer-events: none;
+    color: darken(#F5DF4D, 15%);
+
+    &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: super;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: currentColor;
+    }
+}
+
 #toggle-mode {
     cursor: pointer;
-    
+
     .toggle-border {
         width: 40px;
         height: 24px;
