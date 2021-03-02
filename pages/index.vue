@@ -71,12 +71,10 @@ export default {
                     dynamicBullets: true
                 },
                 breakpoints: {
-                    // when window width is >= 480px
                     768: {
                         slidesPerView: 1.35,
                         spaceBetween: 80
                     },
-                    // when window width is >= 640px
                     1024: {
                         slidesPerView: 1.5,
                         spaceBetween: 140
@@ -153,17 +151,6 @@ export default {
             width: 100%;
             height: 100%;
             object-fit: cover;
-        }
-
-        &:after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            transition: all 300ms linear;
-            background-color: rgba(255, 255, 255, 0.25);
         }
     }
 

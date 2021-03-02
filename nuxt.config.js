@@ -70,6 +70,16 @@ export default {
     modules: [
         '@nuxt/content'
     ],
+
+    generate: {
+        routes: [
+            '/works/heavenlights',
+            '/works/onerdm',
+            '/works/pipiltin-cocoa',
+            '/works/studio1212',
+            '/works/w-steakngrill',
+        ]
+    },
     
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {
