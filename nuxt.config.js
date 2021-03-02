@@ -32,8 +32,8 @@ export default {
             { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5bbad5' },
             { rel: 'dns-prefetch', href: 'https://fonts.gstatic.com/' },
             { rel: 'preconnect', href: 'https://fonts.gstatic.com/', crossorigin: 'anonymous' },
-            { rel: 'stylesheet preload prefetch', as: 'style', href: 'https://fonts.googleapis.com/css?family=Barlow:400,500', crossorigin: 'anonymous' },
-            { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Barlow:400,500&display=swap' }
+            { rel: 'stylesheet preload prefetch', as: 'style', href: 'https://fonts.googleapis.com/css?family=Barlow:400,500,600', crossorigin: 'anonymous' },
+            { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Barlow:400,500,600&display=swap' }
         ]
     },
     
